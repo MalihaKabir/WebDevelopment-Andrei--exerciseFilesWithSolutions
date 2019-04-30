@@ -1,0 +1,22 @@
+
+// Make a Calculator! using prompt(), and variables, make a program that does the following:
+var firstNumber = prompt("Please provide the first number");
+var secondNumber = prompt("Please provide the second number");
+alert(Number(firstNumber) + Number(secondNumber));
+
+
+
+
+
+// My OWN SOLUTION (for BONUS):
+
+let frst = prompt("enter first number")
+let lrst = prompt ("enter last number")
+let sum = Number(frst) + Number(lrst)
+let subtract = Number(frst) - Number(lrst)
+let multiply = Number(frst) * Number(lrst)
+let divide = Number(frst) / Number(lrst)
+alert(sum)
+alert(subtract)
+alert(multiply)
+alert(divide)
