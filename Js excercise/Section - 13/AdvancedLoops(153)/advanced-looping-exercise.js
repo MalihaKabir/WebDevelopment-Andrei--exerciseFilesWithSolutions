@@ -79,29 +79,42 @@ amazonBasket = {
 };
 
 
-// Solution: (unsolved)
+// Solution: (solved)
 
-// for (let key in amazonBasket) {
-//   console.log(key);
-// }
+const amazonBasket = {
+	glasses : 1,
+	books   : 2,
+	floss   : 100,
+};
 
-function checkBasket(basket, lookingFor) {
-  // debugger;
-  // let key = basket.lookingFor
-  for (key in basket) {
-    console.log(key);
-    
-    if (lookingFor === key) {
-      // return lookingFor;
-      console.log(key);
-      
-    } else {
-      // return 'Sorry';
-      console.log('Sorry');
-      
-    }
+function checkBasket (basket, lookingFor) {
+	for (key in basket) {
+		if (lookingFor === key) {
+			return lookingFor;
+		}
 	}
+	return 'Sorry';
 }
 
-// console.log(checkBasket('amazonBasket', 'books'));
-checkBasket('amazonBasket', 'books')
+checkBasket(amazonBasket, 'books');
+
+// function checkBasket(basket, lookingFor) {
+//   // debugger;
+//   // let key = basket.lookingFor
+//   for (key in basket) {
+// //     console.log(key);
+    
+//     if (lookingFor === key) {
+//       // return lookingFor;
+//       console.log(key);
+      
+//     } else {
+//       // return 'Sorry';
+//       console.log('Sorry');
+      
+//     }
+// 	}
+// }
+
+// // console.log(checkBasket('amazonBasket', 'books'));
+// checkBasket(amazonBasket, 'books')
