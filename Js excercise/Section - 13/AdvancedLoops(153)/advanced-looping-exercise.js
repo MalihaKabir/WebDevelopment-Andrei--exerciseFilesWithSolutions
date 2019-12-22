@@ -90,7 +90,7 @@ const amazonBasket = {
 function checkBasket (basket, lookingFor) {
 	for (key in basket) {
 		if (lookingFor === key) {
-			return lookingFor;
+			return key;
 		}
 	}
 	return 'Sorry';
